@@ -23,23 +23,10 @@
 	</head>
 	<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<img src="images/ninja.png" alt="" width="8.5%" height="8.5%" align="left" />
-					<li><a href="a1.html">A1</a></li>
-					<li><a href="a2.html">A2</a></li>
-					<li><a href="a3.html">A3</a></li>
-					<li><a href="a4.html">A4</a></li>
-					<li><a href="a5.html">A5</a></li>
-					<li><a href="a6.html">A6</a></li>
-					<li><a href="a7.html">A7</a></li>
-					<li><a href="a8.html">A8</a></li>
-					<li><a href="a9.html">A9</a></li>
-					<li><a href="a10.html">A10</a></li>
-					<!-- <li><img src="images/opendns_logo.png" alt="" width="65.5%" height="65.5%" align="right" /> -->
-				</ul>
-			</nav>
+		
+<?php
+include("menu.html")
+?>
 			<div class="wrapper style2">
 				<article id="work">
 					

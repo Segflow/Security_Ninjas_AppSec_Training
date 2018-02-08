@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Security Ninja</title>
+	<title>A3 : Cross-Site Scripting (XSS)</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -23,48 +23,51 @@
 
 <body>
 
+<?php
+include("menu.html")
+?>
+	<div class="wrapper style2">
+		<article id="work">
 
-	<nav id="nav">
-		<br>
-		<br>
-		<!--<img src="images/ninja.png" alt="Security Ninja" align="center" />-->
-		<font color="#F08113" size="10px">Make me a Security Ninja!</font>
-		<br>
-		<br>
-		<br>
-	</nav>
-	<a href="a1.php">
-		<div class="wrapper style2">
+			<h5>A3 : Cross-Site Scripting (XSS)</h5>
+			<br>
+			<br>
+			<div class="container">
+				<a href="reflected_xss.php">Reflected XSS</a>
+				<br>
+				<a href="stored-html.php">Stored XSS</a>
+			</div>
+			<p></p>
+			<p></p>
+			<p></p>
 			<br>
 			<br>
 			<br>
 			<br>
-			<img src="images/ninja.png" alt="Security Ninja" align="center" />
-			<br>
-			<br>
-			<font color="#F08113" size="4px" align="center">Start here!</font>
-		</div>
-
-	</a>
-
-	<div class="wrapper style4">
-
-		<a href="http://www.opendns.com">
-			<img src="images/opendns_logo.png" width="10%" height="5%" />
-		</a>
-		<br>
-		<br>
-		<ul id="copyright">
-
-			<li>&copy; OpenDNS. All rights reserved.</li>
-			<li>
-				<a href="http://engineering.opendns.com/security/" target="_blank">OpenDNS Security</a>
-			</li>
-		</ul>
 
 		</article>
 	</div>
 
+
+
+	<div class="wrapper style4">
+		<article id="contact" class="container small">
+			<header>
+
+				<p>This exercise covers two types of XSS: Stored and Reflected
+				</p>
+			</header>
+
+			<footer>
+				<ul id="copyright">
+					<li>&copy; OpenDNS. All rights reserved.</li>
+					<li>
+						<a href="http://engineering.opendns.com/security/" target="_blank">OpenDNS Security</a>
+					</li>
+				</ul>
+			</footer>
+		</article>
+	</div>
 
 </body>
 

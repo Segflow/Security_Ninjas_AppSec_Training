@@ -1,45 +1,34 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>A1 : Injection</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head>
-	<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<img src="images/ninja.png" alt="" width="8.5%" height="8.5%" align="left" />
-					<li><a href="a1.html">A1</a></li>
-					<li><a href="a2.html">A2</a></li>
-					<li><a href="a3.html">A3</a></li>
-					<li><a href="a4.html">A4</a></li>
-					<li><a href="a5.html">A5</a></li>
-					<li><a href="a6.html">A6</a></li>
-					<li><a href="a7.html">A7</a></li>
-					<li><a href="a8.html">A8</a></li>
-					<li><a href="a9.html">A9</a></li>
-					<li><a href="a10.html">A10</a></li>
-					<!-- <li><img src="images/opendns_logo.png" alt="" width="65.5%" height="65.5%" align="right" /> -->
-				</ul>
-			</nav>
+<head>
+	<title>A1 : Injection</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.scrolly.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+</head>
 
-		<!--	
+<body>
+
+
+	<?php
+include("menu.html")
+?>
+
+	<!--	
 		
 			<div class="wrapper style1 first">
 				<article class="container" id="top">
@@ -58,23 +47,25 @@
 				</article>
 			</div>
 		-->
-		<!-- Work -->
-			<div class="wrapper style2">
-				<article id="work">
-					<header>
-						<h2>A1 : Injection</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							Whois Lookup
+	<!-- Work -->
+	<div class="wrapper style2">
+		<article id="work">
+			<header>
+				<h2>A1 : Injection</h2>
+			</header>
+			<div class="container">
+				<div class="row">
+					Whois Lookup
 
-							<br>
+					<br>
 
-							<form method="GET" action="lookup.php">
-							Domain Name: <input type="text" name="site"><br>
-							<input type="submit" value="submit">
-							</form>
-														<!--
+					<form method="GET" action="lookup.php">
+						Domain Name:
+						<input type="text" name="site">
+						<br>
+						<input type="submit" value="submit">
+					</form>
+					<!--
 							<div class="4u">
 								<section class="box style1">
 									<span class="icon featured fa-comments-o"></span>
@@ -97,33 +88,33 @@
 								</section>
 							</div>
 						-->
-						</div>
-					</div>
-					<!--
+				</div>
+			</div>
+			<!--
 					<footer>
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#portfolio" class="button big scrolly">See some of my recent work</a>
 					</footer>
 				-->
-				</article>
-			</div>
+		</article>
+	</div>
 
-		
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container small">
-					<header>
-				
-						<p>About the vulnerability / What you have to do</p>
-					</header>
-					<div>
-						<div class="row">
-							<div class="12u">
-							<ul>
-							<li>	Hint 1</li>
-							<li>	Hint 2</li>
-							</ul>
-							<!--
+
+	<!-- Contact -->
+	<div class="wrapper style4">
+		<article id="contact" class="container small">
+			<header>
+
+				<p>About the vulnerability / What you have to do</p>
+			</header>
+			<div>
+				<div class="row">
+					<div class="12u">
+						<ul>
+							<li> Hint 1</li>
+							<li> Hint 2</li>
+						</ul>
+						<!--
 								<form method="post" action="#">
 									<div>
 										<div class="row">
@@ -154,16 +145,20 @@
 										</div>
 									</div>
 								</form> -->
-							</div>
-						</div>
 					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; OpenDNS. All rights reserved.</li><li><a href="http://engineering.opendns.com/security/" target="_blank">OpenDNS Security</a></li>
-						</ul>
-					</footer>
-				</article>
+				</div>
 			</div>
+			<footer>
+				<ul id="copyright">
+					<li>&copy; OpenDNS. All rights reserved.</li>
+					<li>
+						<a href="http://engineering.opendns.com/security/" target="_blank">OpenDNS Security</a>
+					</li>
+				</ul>
+			</footer>
+		</article>
+	</div>
 
-	</body>
+</body>
+
 </html>
